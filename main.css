@@ -1,0 +1,407 @@
+@font-face{
+  font-family: "Uber-Move";
+  src:url("/uber-move-2-cufonfonts/UberMoveMedium.otf")
+}
+
+@font-face{
+  font-family: "Font-Awesome";
+  src: url(/fontawesome-free-6.4.2-desktop/otfs/Font\ Awesome\ 6\ Brands-Regular-400.otf)
+}
+
+*{
+  margin: 0px;
+  font-family: "Uber-Move";
+}
+
+header{
+  display: flex;
+  place-content: center;
+  height: 64px;
+  background-color: black;
+  /* border-bottom: 1px solid white; */
+  padding: 0 64px;
+}
+
+#nav-links-container-wrapper{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100%;
+}
+#nav-links-container {
+  display: flex;
+  place-items: center;
+  color: white;
+}
+
+#header-title{
+  font-size: 15px;
+  font-weight: 200;
+}
+.nav-links{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  border: 1px solid transparent;
+  padding: 8px 15px;
+  border-radius: 30px;
+  transition-duration: .5s;
+  transition: border background-color;
+}
+
+.nav-links:not(#header-title):hover,
+.account-links:not(#sign-up-button):hover{
+  border: 1px #333333 solid;
+  background-color: #333333;
+  border-radius: 30px;
+}
+
+
+#about-select-container{
+  display: flex;
+  flex-direction: column;
+}
+
+#drop-down{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+#account-links-container {
+  display: flex;
+  place-items: center;
+}
+
+.account-links{
+  display: flex;
+  place-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  border: 1px solid transparent;
+  padding: 8px 15px;
+  border-radius: 30px;
+  transition: border .5s, background-color .5s;
+}
+
+#lang-container {
+  gap: 10px;
+}
+
+#lang-icon {
+  height: 15px;
+  transform: rotate(-45deg);
+}
+
+#sign-up-button{
+  border: 1px solid white;
+  color:black;
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: background-color .75s
+}
+
+#sign-up-button:hover {
+  background: #E2E2E2;
+}
+
+/* main {
+  padding: 0 64px;
+  background-color: black;
+} */
+
+#go-anywhere-wrapper{
+  display: flex;
+  justify-content: center;
+  height: 751.5px;
+  background-color:  black;
+}
+
+#go-anywhere-with-uber-container{
+  display: flex;
+  place-content: space-between;
+  place-items: center;
+  max-width: 1152px;
+  padding: 32px 107px;
+  gap: 64px;
+}
+
+#left > *{
+  color: white;
+}
+#left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 220px;
+}
+
+#main-headline{
+  display: flex;
+  flex-wrap:wrap;
+  font-size: 52px;
+  font-weight: 700;
+}
+
+#with-uber-buttons-container{
+  display: flex;
+  gap: 20px;
+}
+
+.with-uber-buttons{
+  border: 1px solid transparent;
+  padding: 13.5px 29px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+#ride-with-uber{
+  background-color: white;
+  color: black;
+}
+
+#drive-with-uber{
+  background-color: #333333;
+  color: white;
+  transition: background-color .5s;
+}
+
+#drive-with-uber:hover{
+  background-color: #545454;
+}
+
+#right-image{
+  height:697.5px;
+}
+
+#earn-container-wrapper{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  height: 686px;
+}
+#earn-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1152px;
+  padding: 64px 107px;
+}
+
+#earn-left-image{
+  height: 558px;
+}
+
+#earn-right-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  height: 392px;
+  width: 459px;
+  gap: 30px;
+}
+
+#earn-headline{
+  font-size: 54px;
+  height: 256px;
+  width: 459px;
+}
+
+#get-started-links-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#get-started-links-container{
+  display: flex;
+  place-items: center;
+}
+
+#get-started-button{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 1px solid transparent;
+  padding: 14px 25px;
+  border-radius: 8px;
+  transition: background-color .5s;
+}
+
+#get-started-button:hover{
+  background-color: #333333;
+}
+
+#already-have-an-account{
+  color: black;
+  text-decoration: none;
+  padding-bottom: 5px;
+  background: linear-gradient(
+    to left,
+    #CCCBCC 50%,
+     black 50%)
+      right
+      bottom
+      transparent
+      no-repeat;
+  background-size: 200% 1px;
+  transition: background-position .25s;
+}
+
+#already-have-an-account:hover{
+  background-position: left bottom;
+}
+
+#always-the-ride-wrapper{
+  display: flex;
+  place-content: center;
+  place-items: center;
+  background-color: black;
+  height: 686px;
+}
+
+#always-the-ride-container{
+  display: flex;
+  place-items: center;
+  place-content: space-between;
+  max-width: 1152px;
+  width: 100%;
+
+}
+
+#always-the-ride-wrapper > *{
+  color: white;
+}
+
+#always-the-ride-left{
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  flex-wrap: wrap;
+  width: 384px;
+  height: 459px;
+}
+
+
+#always-the-ride-headline{
+  font-size: 54px;
+  margin-bottom: 30px;
+}
+
+#request-a-ride{
+  margin-bottom: 15px;
+}
+
+#black-circle,
+#destination-icon{
+  height: 10px;
+  padding-left: 10px;
+}
+
+#enter-current-location,
+#enter-destination{
+  display: flex;
+  place-items: center;
+  background-color: white;
+  width: fit-content;
+}
+
+
+#always-the-ride-image{
+  height: 558px;
+}
+
+.ride-check{
+  border: 1px solid white;
+  gap: 5px;
+  background-color: white;
+  padding: 15px 0;
+  border-radius: 8px;
+}
+
+
+#enter-current-location{
+  display: flex;
+  justify-content: space-between;
+  width: 392px;
+  margin-bottom: 10px;
+  background-color: #EEEEEE;
+}
+
+#enter-destination{
+  width: 392px;
+  margin-bottom: 40px;
+  background-color: #EEEEEE;
+}
+
+.location-input{
+  background-color: #EEEEEE;
+  outline: none;
+  width: 100%;
+  border: none;
+}
+
+#location-arrow{
+  height: 20px;
+  margin-right: 20px;
+  justify-self: end;
+}
+
+#see-prices{
+  color: black;
+  padding: 15px 20px;
+}
+
+#uber-for-business-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#uber-for-business-container{
+  display: flex;
+  place-items: center;
+  place-content: space-between;
+  max-width: 1152px;
+  width: 100%;
+  height: 558px;
+  padding: 64px;
+  padding-bottom: 0;
+
+}
+
+#uber-for-business-img{
+  height: 558px;
+}
+
+#uber-for-business-right{
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  height: 352px;
+  width: 459px;
+  gap: 30px;
+}
+
+#uber-for-business-headline{
+  font-size: 54px;
+}
+
+#business-get-started{
+  display: flex;
+  place-items: center;
+  gap: 20px;
+}
+
+#uber-one-image{
+  width: 558px;
+}
+
+#uber-one-headline{
+  font-size: 35px;
+}
